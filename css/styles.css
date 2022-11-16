@@ -1,0 +1,399 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Headers */
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4em;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7em;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h5 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+p {
+    color: black;
+    font-weight: normal;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+    color: #4426ee;
+    font-weight: 800;
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+}
+
+/* Listas */
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    padding-right: 1.5em;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* formulario */
+
+.col {
+    display: block;
+    padding-right: 1.5em;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.form {
+    padding: 2em;
+    color:#ffffff;
+    }
+
+.form--footer {
+     padding: 0em;
+     color:#ffffff;
+     }
+
+input, textarea {
+    border-radius: 0.4em 0.4em 0.4em 0.4em;
+    margin: 0.2em;
+    border: 0em;
+}
+
+.form__button {
+    font-family: 'Raleway', sans-serif;
+    background-color: #ee9b26;
+    color:white;
+    border:none; 
+    border-radius:10px; 
+    padding:10px;
+    min-height:30px; 
+    min-width: 120px;
+    margin-top: 1em;
+    margin-bottom:9em
+}
+
+.form__button--footer {
+    font-family: 'Raleway', sans-serif;
+    background-color: #ee9b26;
+    color:white;
+    border:none; 
+    border-radius:10px; 
+    padding:5px;
+    min-height:30px; 
+    min-width: 120px;
+    margin-top: 1em;
+    margin-bottom:9em
+}
+
+fieldset {
+border: none;
+}
+
+
+label {
+    color:#ffffff;
+}
+
+
+
+/* Contenedores */
+
+.contenedor--cards-centradas {
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contenedor--cards-block {
+    display:inline-block
+}
+
+.contenedor--slider-index {
+    background-color: white;
+    background-image: url(../images/slider.jpg);
+    background-size: cover;
+    height: 40em;
+    width: auto;
+    padding-left: 3.3em;
+
+}
+
+.contenedor--slider-cafe {
+    background-color: white;
+    background-image: url(../images/slider-cafe.jpg);
+    background-size: cover;
+    height: 40em;
+    width: auto;
+    padding-left: 3.3em;
+
+}
+
+.contenedor--slider-accesorios {
+    background-color: white;
+    background-image: url(../images/slider-accesorios.jpg);
+    background-size: cover;
+    height: 40em;
+    width: auto;
+    padding-left: 3.3em;
+
+}
+
+.contenedor--slider-blog {
+    background-color: white;
+    background-image: url(../images/slider-blog.jpg);
+    background-size: cover;
+    height: 40em;
+    width: auto;
+    padding-left: 3.3em;
+
+}
+
+.contenedor--slider-contacto {
+    background-color: white;
+    background-image: url(../images/slider-contacto.jpg);
+    background-size: cover;
+    height: 40em;
+    width: auto;
+    padding-left: 3.3em;
+
+}
+
+/* Contenido */
+
+.contenido--cafe-del-dia{
+    background-color: #ffffff;
+    padding-top:2em;
+    padding-bottom:2em;
+    text-align: left;
+}
+
+.contenido--origen{
+    background-color: #f7f7fd;
+    padding-top:2em;
+    padding-bottom:2em;
+    text-align: center;
+}
+
+.contenido--accesorios{
+    background-color: #f7f7fd;
+    padding-top:2em;
+    padding-bottom:2em;
+    text-align: center;
+}
+
+.contenido--contacto{
+    background-color:#4426ee;
+    padding-top:2em;
+    padding-bottom:2em;
+    text-align: left;
+}
+
+.contenido--blog{
+    background-color: #ffffff;
+    padding-top:2em;
+    padding-bottom:2em;
+    text-align: left;
+}
+
+.contenido__title {
+    padding-bottom:1em;
+    text-align: center;
+}
+
+.contenido__title-white {
+    padding-bottom:1em;
+    text-align: center;
+    color:white
+}
+
+/* Slider */
+
+.slider__title {
+    width: 13em;
+    padding-top:0.4em;
+}
+
+.slider__tagline {
+    width: 28em;
+    padding-top:16em;
+}
+
+.slider__subtitle {
+    width: 28em;
+    padding-top:0.6em;
+}
+
+.slider__button {
+    background-color: #4426ee;
+    color:white;
+    border:none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+    margin-top: 1em;
+    margin-bottom:9em
+}
+
+/* Footer */
+
+
+footer {
+    padding:3em;
+    background-color: #000;
+}
+
+#footer__text {
+    color:white;
+    font-size: 0.8em;
+}
+
+/* Nav */
+
+#nav {
+    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8em;
+    text-align:center;
+    padding: 1em;
+    padding-bottom: 2em;
+}
+
+#topnav {
+    background-color: #4426ee;
+    color: #ffffff;
+    font-size: 0.9em;
+    padding: 0.8em;
+    text-align:center;
+}
+
+#logo {
+    width: 80px;
+}
+
+/* Cards */
+
+.card {
+    border: none;
+    border-radius: 1em 1em 1em 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 2rem;
+ }
+
+ .card--20rem {
+    width: 20rem;
+    background-color: white;
+ }
+
+ .card--60rem {
+    width: 60rem;
+    padding:4rem;
+ }
+
+ .card__img--origen {
+    width: 15rem; 
+    height: 15rem;
+ }
+
+ .card__img--chico {
+    width: 10rem; 
+ }
+
+ .card__img--cafe-dia {
+    height: 15rem; 
+ }
+
+ .card__img--articulo {
+    height: 20rem;
+    width:60rem; 
+    margin-bottom: 1em;
+ }
+
+ .card__title {
+    font-size: 1.4rem;
+ }
+
+ .card__title--article {
+    font-size: 1.4rem;
+    margin-bottom:0.5em
+ }
+
+ .card__title--azul {
+    font-size: 1.4rem;
+    color: #4426ee;
+    font-weight: 800;
+    margin-bottom:0.5em
+ }
+
+ .card__descr {
+ font-size: 0.8rem;
+}
+
+.card__price {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #4426ee;
+   }
+
+.card__button {
+    background-color: #4426ee;
+    color:white;
+    border:none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+    margin-top: 1em;
+    margin-bottom:1em
+}
+
+/* Ids */
+#cafe-del-dia-card {
+background-color: rgb(201, 252, 255);
+}
+
+#article-bg {
+    background-color: rgb(255, 255, 255);
+    }
