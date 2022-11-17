@@ -4,131 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">        
     <link rel="stylesheet" href="../css/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <section>
-            <div id="topnav">
-                <h6> Envíos gratis a partir de $5000 en CABA</h6>
-            </div>
-        </section>
-        <nav>
-            <div name="navegacion" id="nav">
-                <ul>
-                    <li id="logo"><img id="logo" src="../images/logo.jpg" alt="logotipo"></li>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="cafe.html">Comprar Café</a></li>
-                    <li><a href="accesorios.html">Accesorios</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-
-                </ul>
-            </div>
-        </nav>
-    </header>
-
     <main>
 
-        <section>
-            <div class="contenedor--slider-cafe">
-                <h6 class="slider__tagline"> HAY UN CAFÉ PARA VOS</h6>
-                <h1 class="slider__title"> Explorá todas las variedades</h1>
-                <h3 class="slider__subtitle"> Y recibí tu compra en tu casa</h3>
-                <button class="slider__button" type="button">Ver más</button>
+    <div id="grilla-principal">
+
+        <header id="header">
+            <div class="header-padre">
+                <div class="topnav"><p>Envíos gratis a partir de $5000 en CABA</p></div>
+                <div class="logo"><a href="../index.html"><img src="../images/logo.jpg" alt="logotipo"></a></div>
+                <nav class="menu"> 
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="cafe.html">Comprar Café</a></li>
+                        <li><a href="accesorios.html">Accesorios</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
             </div>
+        </header>
+
+        <section id="slider">
+            <div class="slider-padre slider-padre-cafe">
+                <div id="slider-padre-tagline" class="slider__tagline">HAY UN CAFÉ PARA VOS</div>
+                <h1 id="slider-padre-title" class="slider__title">Explorá todas las variedades de café</h1>
+                <h3 id="slider-padre-subtitle" class="slider__subtitle">Y recibí tu compra en tu casa</h3>
+                <button id="slider-padre-button" class="slider__button" type="button">Ver más</button>
+            </div>
+
         </section>
 
 
-   
-
-        <section>
-            <div class="contenido--accesorios">
-                <h2 class="contenido__title">Nuestro café</h2>
-                    <div class="contenedor--cards-centradas">
-                        <div class="card card--20rem"> 
-                            <img src="../images/blend-brasil-colombia.png" alt="Cafe Brasil Colombia" class="card__img--chico">
-                            <p class="card__title">Blend Brasil Colombia</p>
-                            <p class="card__price">$2690</p>
+        <section id="origen">
+            <div class="accesorios-titulo"><h2>Nuestro café</h2></div>
+                <div class="accesorios-padre">
+                        <div class="card-accesorios"> 
+                            <img src="../images/blend-brasil-colombia.png" alt="Café brasil colombia" class="card__img--origen">
+                            <div class="card-accesorios-titulo">Blend Brasil Colombia</div>
+                            <div class="card__price">$1690</div>
                             <button class="card__button">Comprar</button>
                         </div>
-                        <div class="card card--20rem"> 
-                            <img src="../images/brasil-catuai.png" alt="Cafe Brasil Catuai" class="card__img--chico">
-                            <p class="card__title">Cafe Brasil Catuai</p>
-                            <p class="card__price">$2550</p>
+                        
+                        <div class="card-accesorios"> 
+                            <img src="../images/brasil-catuai.png" alt="Cafe catuai" class="card__img--origen">
+                            <div class="card-accesorios-titulo">Cafe Brasil Catuai</div>
+                            <div class="card__price">$2550</div>
                             <button class="card__button">Comprar</button>
                         </div>
-                        <div class="card card--20rem"> 
-                            <img src="../images/costa-rica.png" alt="Cafe costa rica" class="card__img--chico">
-                            <p class="card__title">Café Costa Rica</p>
-                            <p class="card__price">$1690</p>
+                        <div class="card-accesorios"> 
+                            <img src="../images/costa-rica.png" alt="Café Costa Rica" class="card__img--origen">
+                            <div class="card-accesorios-titulo">Café Costa Rica</div>
+                            <div class="card__price">$1690</div>
                             <button class="card__button">Comprar</button>
                         </div>
                     </div>
-            </div>
         </section>
 
-        <section>
-            <div class="contenido--blog">
-                    <h2 class="contenido__title">Categorías de café</h2>
-                        <div class="contenedor--cards-centradas">
-                            <div class="card card--60rem"> 
-                                <h3 class="card__title--azul">Arábica</h3>
-                                <ul>
-                                    <li class="col">Opción 1</li>
-                                    <li class="col">Opción 2</li>
-                                    <li class="col">Opción 3</li>
-                                    <li class="col">Opción 4</li>
-                                    </ul>
-                            </div>
-                            <div class="card card--60rem"> 
-                                <h3 class="card__title--azul">Robusta</h3>
-                                <ul>
-                                    <li class="col">Opción 1</li>
-                                    <li class="col">Opción 2</li>
-                                    <li class="col">Opción 3</li>
-                                    <li class="col">Opción 4</li>
-                                    </ul>
-                            </div>
-                            <div class="card card--60rem"> 
-                                <h3 class="card__title--azul">Libérica</h3>
-                                <ul>
-                                    <li class="col">Opción 1</li>
-                                    <li class="col">Opción 2</li>
-                                    <li class="col">Opción 3</li>
-                                    <li class="col">Opción 4</li>
-                                    </ul>
-                            </div>
-                            <div class="card card--60rem"> 
-                                <h3 class="card__title--azul">Excelsa</h3>
-                                <ul>
-                                    <li class="col">Opción 1</li>
-                                    <li class="col">Opción 2</li>
-                                    <li class="col">Opción 3</li>
-                                    <li class="col">Opción 4</li>
-                                    </ul>
-                            </div>
-                            
-                           
-                        </div>
-                </article>
+    </div>
+
+        <section class="cuatro-columnas-contenedor">
+            <h2>Categorías de café</h2>
+            <div class="cuatro-columnas">
+                 <div class="card-4col">
+                    <h3>Arábica</h3>
+                    <ul>
+                        <li class="listado">Opción 1</li>
+                        <li class="listado">Opción 2</li>
+                        <li class="listado">Opción 3</li>
+                        <li class="listado">Opción 4</li>
+                    </ul>
+                </div>
+                <div class="card-4col"> 
+                    <h3>Robusta</h3>
+                    <ul>
+                        <li class="listado">Opción 1</li>
+                        <li class="listado">Opción 2</li>
+                        <li class="listado">Opción 3</li>
+                        <li class="listado">Opción 4</li>
+                    </ul>
+                </div>
+                <div class="card-4col"> 
+                    <h3>Libérica</h3>
+                    <ul>
+                        <li class="listado">Opción 1</li>
+                        <li class="listado">Opción 2</li>
+                        <li class="listado">Opción 3</li>
+                        <li class="listado">Opción 4</li>
+                    </ul>
+                </div>
+                <div class="card-4col"> 
+                    <h3>Excelsa</h3>
+                        <ul>
+                        <li class="listado">Opción 1</li>
+                        <li class="listado">Opción 2</li>
+                        <li class="listado">Opción 3</li>
+                        <li class="listado">Opción 4</li>
+                    </ul>
+                </div>
             </div>
+
         </section>
 
-    </main>
+        </main>
 
-    <footer>
-        <div class="contenedor--cards-centradas">
-            <div class="card card-20rem">
-                <p id="footer__text">Todos los derechos registrados 2022</p>
+    <footer id="footer">
+        <div class="footer-padre">
+            <div class="footer-seccion">
+                <p class="footer__text">Todos los derechos registrados 2022</p>
             </div>
-            <div class="card card-20rem">
+            <div class="footer-seccion">
                     <ul>
                         <li>
                             <img src="../images/facebook-2.svg">
@@ -141,17 +133,17 @@
                         </li>
                     </ul>
             </div>
-            <div class="card card-20rem">
+            <div class="footer-seccion">
                 <form class="form-footer" action="" method="post">
                     <ul>
-                        <li class="col">
-                            <p id="footer__text">Unite a nuestra comunidad, ya somos mas de 10.ooo coffee lovers.</p>
+                        <li>
+                            <p>Unite a nuestra comunidad, ya somos mas de 10.ooo coffee lovers.</p>
                         </li>
                         <li>
-                            <label id="footer__text" for="mail">E-mail:</label>
+                            <label for="mail">E-mail:</label>
                             <input type="email" id="mail" name="mail">
                           </li>
-                        <li class="col">
+                        <li>
                             <button class="form__button--footer" type="submit">Enviar</button>
                         </li>
                     </ul>
@@ -159,5 +151,6 @@
             </div>
         </div>
     </footer>
-</body>
-</html>
+    
+    </body>
+    </html>
