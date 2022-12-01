@@ -1,0 +1,13 @@
+#grilla-principal {  
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "slider slider slider"
+      "origen origen origen"
+      "cafe-del-dia cafe-del-dia cafe-del-dia"
+      "blog blog blog"
+      "footer footer footer";
+
+      grid-template-columns: repeat(3, 1fr);
+
+  }

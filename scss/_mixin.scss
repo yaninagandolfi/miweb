@@ -1,0 +1,14 @@
+@mixin flex-column-centrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin ancho-alto ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+/* se usa 
+@include ancho-alto(200px, 300px);
+*/ 

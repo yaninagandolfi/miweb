@@ -1,0 +1,45 @@
+.accesorios-padre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2em;
+    column-gap: 3em;
+    justify-items: center;
+    padding: 3em;
+    background-color: #f7f7fd;
+ }
+
+ .card-accesorios p {
+    font-size: 0.8em;
+    padding-top: 1em;
+}
+
+.card-accesorios {
+    background-color: #ffffff;
+    border-radius: 10%;
+}
+
+
+.card-accesorios-titulo {
+    font-size: 1.4em;
+}
+
+
+.accesorios-titulo {
+    background-color: #f7f7fd;
+    padding-top: 2em;
+}
+
+ /* Media Queries */
+
+
+ @media screen and (max-width: 992px) {
+    .accesorios-padre {
+     grid-template-columns: repeat(2, 1fr);
+     }
+ }
+ 
+ @media screen and (max-width: 767px) {
+     .accesorios-padre {
+      grid-template-columns: repeat(1, 1fr);
+      }
+  }

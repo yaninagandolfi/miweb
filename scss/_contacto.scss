@@ -1,0 +1,79 @@
+    /* formulario */
+
+    .contenido--contacto {
+        display: flex;
+        justify-content: center;
+        transform: translate(0px, -0px );
+        background: linear-gradient(#4426ee, #9198e5);
+        padding-top: 2em;
+        padding-bottom: 2em;
+        text-align: left;
+        }
+    
+    .col {
+        display: block;
+        padding-right: 1.5em;
+    }
+    
+    
+    .form {
+        padding: 2em;
+        color:#ffffff;
+        border: #000 1px solid;
+        border-radius: 3%;
+        text-align: left;
+        }
+    
+    .form--footer {
+         padding: 0em;
+         color:#ffffff;
+         }
+    
+    textarea {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0.4em 0.4em 0.4em 0.4em;
+        margin: 0.2em;
+        border: 0em;
+        margin-bottom: 1em;
+    }
+    
+    input {
+        border-radius: 0.4em 0.4em 0.4em 0.4em;
+        margin: 0.2em;
+        border: 0em;
+        margin-bottom: 1em;
+    }
+    
+    
+    
+    .form__button {
+        background-color: #ee9b26;
+        color:white;
+        border:none; 
+        border-radius:10px; 
+        padding:10px;
+        min-height:30px; 
+        min-width: 120px;
+        margin-top: 1em;
+        margin-bottom:9em
+    }
+    
+    .form__button--footer {
+        font-family: 'Raleway', sans-serif;
+        background-color: #ee9b26;
+        color:white;
+        border:none; 
+        border-radius:10px; 
+        padding:5px;
+        min-height:30px; 
+        min-width: 120px;
+        margin-top: 1em;
+        margin-bottom:9em
+    }
+    
+    
+    
+    
+    
