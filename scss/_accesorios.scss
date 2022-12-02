@@ -8,14 +8,18 @@
     background-color: #f7f7fd;
  }
 
- .card-accesorios p {
-    font-size: 0.8em;
-    padding-top: 1em;
-}
+
 
 .card-accesorios {
     background-color: #ffffff;
     border-radius: 10%;
+    padding: 10%;
+    min-width: auto;
+
+    p {
+        font-size: 0.8em;
+        padding-top: 1em;
+    }
 }
 
 
@@ -28,6 +32,15 @@
     background-color: #f7f7fd;
     padding-top: 2em;
 }
+
+.slider-padre-accesorios {
+    background-image: url("../images/slider-accesorios.jpg");
+    }
+
+.img-accesorios {
+    @include ancho-alto(200px, 200px);
+}
+    
 
  /* Media Queries */
 

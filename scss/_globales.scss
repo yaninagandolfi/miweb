@@ -55,7 +55,6 @@ fieldset {
 }
 
 
-
 .titulo-fondo-azul {
     background-color: $color-primario;
     color:#ffffff;
@@ -128,25 +127,14 @@ row-gap: 2rem;
 justify-items: left;
 padding: 3em;
 margin-bottom: 2em;
-background-image: url(../images/slider.jpg);
 background-size:cover;
 }
 
-.slider-padre-blog {
-background-image: url(../images/slider-blog.jpg);
-}
 
-.slider-padre-accesorios {
-background-image: url(../images/slider-accesorios.jpg);
-}
 
-.slider-padre-contacto {
-background-image: url(../images/slider-contacto.jpg);
-}
 
-.slider-padre-cafe {
-background-image: url(../images/slider-cafe.jpg);
-}
+
+
 
 #slider-padre-tagline { 
 grid-area: slider-padre-tagline; 

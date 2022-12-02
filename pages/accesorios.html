@@ -17,7 +17,6 @@
     <title>Tienda del café | Accesorios</title>
 </head>
 <body>
-    <main>
 
     <div id="grilla-principal">
 
@@ -25,15 +24,22 @@
             <div class="header-padre">
                 <div class="topnav"><p>Envíos gratis a partir de $5000 en CABA</p></div>
                 <div class="logo"><a href="../index.html"><img src="../images/logo.jpg" alt="logotipo"></a></div>
-                <nav class="menu"> 
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="cafe.html">Comprar Café</a></li>
-                        <li><a href="accesorios.html">Accesorios</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
+ <!--Bootstrap Nav-->               
+ <nav class="menu navbar navbar-expand-sm navbar-light bg-light">
+    <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active"><a href="../index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="cafe.html" class="nav-link">Comprar Café</a></li>
+            <li class="nav-item"><a href="accesorios.html" class="nav-link">Accesorios</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+<!--Bootstrap Nav-->  
             </div>
         </header>
 
@@ -47,33 +53,31 @@
 
         </section>
 
-
-        <section id="origen">
+    <main id="origen"> 
+        <section>
             <div><h2>Todos nuestros accesorios</h2></div>
                 <div class="accesorios-padre">
                         <div class="card-accesorios"> 
-                            <img src="../images/capsulas.jpg" alt="Capsulas para cafe" class="card__img--origen">
+                            <img src="../images/capsulas.jpg" alt="Capsulas para cafe" class="img-accesorios">
                             <div class="card-accesorios-titulo">Cápsulas para café</div>
                             <div class="card__price">$2690</div>
                             <button class="card__button">Comprar</button>
                         </div>
                         
                         <div class="card-accesorios"> 
-                            <img src="../images/balanza.png" alt="Capsulas para cafe" class="card__img--origen">
+                            <img src="../images/balanza.png" alt="Capsulas para cafe" class="img-accesorios">
                             <div class="card-accesorios-titulo">Balanza para café</div>
                             <div class="card__price">$2550</div>
                             <button class="card__button">Comprar</button>
                         </div>
                         <div class="card-accesorios"> 
-                            <img src="../images/jarra-vidrio.jpg" alt="Capsulas para cafe" class="card__img--origen">
+                            <img src="../images/jarra-vidrio.jpg" alt="Capsulas para cafe" class="img-accesorios">
                             <div class="card-accesorios-titulo">Jarra de vidrio</div>
                             <div class="card__price">$14690</div>
                             <button class="card__button">Comprar</button>
                         </div>
                     </div>
         </section>
-
-
     </main>
 
     <footer class="footer container-fluid">

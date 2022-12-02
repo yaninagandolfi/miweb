@@ -112,24 +112,7 @@ li {
   justify-items: left;
   padding: 3em;
   margin-bottom: 2em;
-  background-image: url(../images/slider.jpg);
   background-size: cover;
-}
-
-.slider-padre-blog {
-  background-image: url(../images/slider-blog.jpg);
-}
-
-.slider-padre-accesorios {
-  background-image: url(../images/slider-accesorios.jpg);
-}
-
-.slider-padre-contacto {
-  background-image: url(../images/slider-contacto.jpg);
-}
-
-.slider-padre-cafe {
-  background-image: url(../images/slider-cafe.jpg);
 }
 
 #slider-padre-tagline {
@@ -209,9 +192,6 @@ li {
     align-items: center;
   }
 }
-/* se usa 
-@include ancho-alto(200px, 300px);
-*/
 #grilla-principal {
   display: grid;
   grid-template-areas: "header header header" "slider slider slider" "origen origen origen" "cafe-del-dia cafe-del-dia cafe-del-dia" "blog blog blog" "footer footer footer";
@@ -315,6 +295,10 @@ li {
   padding-top: 1em;
 }
 
+.slider-padre-home {
+  background-image: url("../images/slider.jpg");
+}
+
 /* Media Queries */
 @media screen and (max-width: 992px) {
   .origen-padre {
@@ -371,14 +355,15 @@ li {
   background-color: #f7f7fd;
 }
 
-.card-accesorios p {
-  font-size: 0.8em;
-  padding-top: 1em;
-}
-
 .card-accesorios {
   background-color: #ffffff;
   border-radius: 10%;
+  padding: 10%;
+  min-width: auto;
+}
+.card-accesorios p {
+  font-size: 0.8em;
+  padding-top: 1em;
 }
 
 .card-accesorios-titulo {
@@ -388,6 +373,15 @@ li {
 .accesorios-titulo {
   background-color: #f7f7fd;
   padding-top: 2em;
+}
+
+.slider-padre-accesorios {
+  background-image: url("../images/slider-accesorios.jpg");
+}
+
+.img-accesorios {
+  width: 200px;
+  height: 200px;
 }
 
 /* Media Queries */
@@ -439,6 +433,10 @@ li {
   font-weight: 800;
 }
 
+.slider-padre-blog {
+  background-image: url("../images/slider-blog.jpg");
+}
+
 /* Media Queries */
 @media screen and (max-width: 992px) {
   .blog-padre {
@@ -455,6 +453,23 @@ li {
 .card__price {
   color: #4426ee;
   font-weight: 700;
+}
+
+.slider-padre-cafe {
+  background-image: url("../images/slider-cafe.jpg");
+}
+
+.categorias-cafe {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listado-titulo {
+  color: #4426ee;
+  font-weight: 700;
+  font-size: larger;
 }
 
 /* formulario */
@@ -528,6 +543,10 @@ input {
   margin-bottom: 9em;
 }
 
+.slider-padre-contacto {
+  background-image: url("../images/slider-contacto.jpg");
+}
+
 /* Footer */
 .footer {
   grid-area: footer;
@@ -556,11 +575,6 @@ input {
   min-width: 120px;
   margin-top: 1em;
   margin-bottom: 9em;
-}
-
-.cuatro-columnas-contenedor {
-  text-align: center;
-  padding: 3em;
 }
 
 .card-4col {
