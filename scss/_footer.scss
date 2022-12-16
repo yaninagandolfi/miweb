@@ -1,35 +1,61 @@
 /* Footer */
-  
-.footer {
-    grid-area: footer; 
-}
 
-.footer-padre {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+.footer {
     background-color: #000;
-    font-size: 0.8em;
+    font-size: 12px;
     padding: 3em;
 
-    p{
+    h3 {
         color: #ffffff;
+    }
+
+    p {
+        color: #ffffff;
+        margin: 0px;
+        font-size: 12px;
+    }
+
+    a {
+        font-weight: 500;
+        color: $acento;
+    }
+    a:hover {
+        color: rgb(114, 114, 114);
+    }
+
+    ul, li {
+        display: block;
+        padding: 0px;
     }
  }
 
-
- .form__button--footer {
-    font-family: 'Raleway', sans-serif;
-    background-color: #ee9b26;
-    color:white;
-    border:none; 
-    border-radius:10px; 
-    padding:5px;
-    min-height:30px; 
-    min-width: 120px;
-    margin-top: 1em;
-    margin-bottom:9em
+.logo-footer {
+    width: 100px;
+    padding: 0px;
+    margin: 0px;
 }
+
+ .footer-boton {
+        @include boton-base;
+        background-color: $acento;
+        color:white;
+    }
+
+.footer-boton:hover {
+    @include boton-base;
+    background-color: rgb(114, 114, 114);
+    color:white;
+}
+
+    .footer-input {
+        border-radius: 10px;
+        padding: 15px;
+        height: 34px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width:70%;
+    }
 
 
 .card-4col {

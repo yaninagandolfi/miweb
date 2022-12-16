@@ -1,47 +1,102 @@
 /* Header */
 
-#header { grid-area: header; 
-}
 
-.header-padre {
-    display: grid;
-    grid-template-columns: repeat(1fr);
-    row-gap: 2rem;
-    padding-bottom:1em
-}
 
-.logo {
-
+.navbar-logo {
     display: flex;
     justify-content:center;
+
+    img{
+        width: 145px;
+    }
      }
 
-.logo img{
-    width: 5em;
-}
 
 .topnav {
     background-color: $color-primario;
-    color: #ffffff;
-    font-size: 0.9em;
-    padding: 0.8em;
-    text-align:center;
-}
-
-.topnav p {
-    font-size: 0.8em;
-    color: #ffffff;
-}
-
-
-.menu {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 35px;
+
+    p {
+        color: #ffffff;
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+}
+
+.topnav-cian {
+    background-color: $color-secundario;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+
+    p {
+        color: $color-primario;
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+    }
+}
+
+.navbar-contenedor {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    max-width: 1400px;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: white;
+}
+
+.navbar-contenedor-padre {
+    display: flex; 
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
      }
 
+/*Nueva navbar*/
 
-.menu li {
-    padding: .3rem 1rem;
- }
+
+.nav-padre {
+    display:flex; 
+    flex-direction: row; 
+    justify-content: center;
+    padding: 30px;
+  }
   
+.nav-chica {
+    display:flex; 
+    flex-direction: row; 
+    width: 1000px; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+ /* Media Queries Nueva nav */
+
+
+ @media screen and (max-width: 768px) {
+
+    .cont-hero-padre {
+        justify-content: space-around;
+      }
+
+
+    .nav-chica  {
+        display:flex; 
+        flex-direction: column-reverse; 
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+ }

@@ -1,58 +1,147 @@
-.accesorios-padre {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 2em;
-    column-gap: 3em;
-    justify-items: center;
-    padding: 3em;
-    background-color: #f7f7fd;
- }
+/* Bg */
+.hero-accesorios-bg {
+    background-image: url("../images/slider-accesorios.jpg"); 
+    background-size:cover;
+}
 
 
 
-.card-accesorios {
-    background-color: #ffffff;
-    border-radius: 10%;
-    padding: 10%;
-    min-width: auto;
+/* Contenedores */
 
+
+
+.accesorios-contenedor {
+    @include flex-column-centrado;
+    align-content: center;
+}
+
+.accesorios-contenedor-chico {
+    @include flex-column-centrado;
+    max-width: 1400px; 
+    padding: 30px;
+}
+
+.contenedor-tarjetas {
+    @include flex-column-centrado;
+    row-gap: 20px;
+}
+
+.contenedor-tarjetas-chico-izq {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 2px 2px 13px 1px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+
+    h3 {
+        color: $color-secundario;
+    }
+}
+
+.contenedor-tarjetas-chico-der {
+    display: flex; 
+    flex-direction: row-reverse; 
+    justify-content: center; 
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 2px 2px 13px 1px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+
+    h3 {
+        color: $color-secundario;
+    }
+}
+
+.tarjeta-img {
+    @include flex-column-centrado;
+    padding:10px;
+    align-self: center;
+}
+
+.tarjeta-texto-izq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding:20px;
+    background-color: $color-primario;
     p {
-        font-size: 0.8em;
-        padding-top: 1em;
+        text-align: left;
+        color: white;
+    }
+}
+
+table {
+    text-align: center;
+    th {
+    color: $color-secundario
+    }
+    td {
+        color: white;
+        }
+}
+
+.tarjeta-texto-der {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding:20px;
+    background-color: $color-primario;
+    p {
+        text-align: right;
+        color: white;
     }
 }
 
 
-.card-accesorios-titulo {
-    font-size: 1.4em;
+/* Boton */
+
+.accesorios-boton {
+    @include boton-base;
+    background-color: $color-secundario;
+    color:$color-primario;
+}
+
+.accesorios-boton:hover {
+    background-color: #0e0637;
+    color: white;
 }
 
 
-.accesorios-titulo {
-    background-color: #f7f7fd;
-    padding-top: 2em;
+/* Imagen destacada */
+
+.imagen-destacada-accesorios {
+    background-image: url("../images/img-destacada-accesorios.jpg"); 
+    background-size:cover;
 }
 
-.slider-padre-accesorios {
-    background-image: url("../images/slider-accesorios.jpg");
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+
+    .tarjeta-texto-izq {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            text-align: center;
+        }
     }
-
-.img-accesorios {
-    @include ancho-alto(200px, 200px);
-}
     
+    .tarjeta-texto-der {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
- /* Media Queries */
-
-
- @media screen and (max-width: 992px) {
-    .accesorios-padre {
-     grid-template-columns: repeat(2, 1fr);
-     }
+        p {
+            text-align: center;
+        }
  }
  
- @media screen and (max-width: 767px) {
-     .accesorios-padre {
-      grid-template-columns: repeat(1, 1fr);
-      }
-  }
+}

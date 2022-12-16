@@ -1,125 +1,252 @@
 /* Origen */
-  
-#origen {
-    grid-area: origen;
-    text-align: center;
-  }
 
-  .origen-padre {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 2em;
-    column-gap: 3em;
-    justify-items: center;
-    padding: 3em;
+.origen-contenedor-padre {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center
+ }
+
+  .origen-contenedor {
+    padding: 20px;
+    display: flex;
+    max-width: 1400px;
+ }
+
+ .origen-columna {
+    display: flex; 
+    flex-direction: column;
+    text-align:center; 
+    align-items: center;
+ }
+
+ .origen-card {
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 2px 2px 13px 1px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    background-color: white;
+ }
+
+.origen-img {
+    margin-bottom:20px;
+}
+
+
+/* Cafe */
+
+
+.cafe-contenedor {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+
+    h3 {
+        color: #4426ee;
+        font-weight: 800;
+    }
+
+ }
+
+ .cafe-card {
+    max-width: 1200px;
+    background-color: #d1f7f6;
+    border-radius: 30px;
+    padding: 50px;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px;
+}
+
+.cafe-card-desc {
+    max-width: 504px;
+}
+
+.cafe-img {
+    margin-bottom:20px;
+    max-width: 300px;
+}
+
+/*iconos*/
+
+ .iconos-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+ }
+
+ .iconos-contenedor-chico {
+    max-width: 1400px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    row-gap: 30px;
+ }
+
+ .iconos {
+    color: $color-primario;
+    font-size: 50px;
+    padding: 30px;
+
+}
+
+
+
+/*Newsletter*/
+
+.news-bg {
+    background-color: $color-primario;
+}
+
+.news-contenedor {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+
+    h2, p {
+        color: white;
+    }
+}
+
+.news-boton {
+    @include boton-base;
+    background-color: $color-secundario;
+    color:$color-primario;
+}
+
+.news-boton:hover {
+    background-color: #0e0637;
+}
+
+.news-input {
+    border-radius: 10px;
+    padding: 15px;
+    height: 54px;
+}
+
+.news-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    align-items: center;
+}
+
+/*Blog*/
+
+.blog-bg {
+    background-color: #fffdf0;
+}
+
+.blog-contenedor {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+
+    h3 {
+        color: #4426ee;
+        font-weight: 800;
+    }
+    article {
+        padding: 40px;
+    }
+
  }
 
 
 
-#cafe-del-dia { grid-area: cafe-del-dia; 
+
+/* Bg */
+.hero-home-bg {
+    background-image: url("../images/slider.jpg"); 
+    background-size:cover;
 }
 
-
-
-.cafe-del-dia-padre {
-    @include flex-column-centrado;
+/* Imagen destacada */
+.imagen-destacada {
+    background-image: url("../images/img-destacada.jpg"); 
+    background-size:cover;
 }
 
-/* Cards */
-
-.cafe-del-dia-card {
-    @extend .card-generica;
-    background-color: rgb(201, 252, 255);
-    }
-
-.card__img--origen {
-    @extend .card-generica;
-max-width: 70%;
-padding-bottom: 1em;
-        }
-
-.card__img--origen:hover {
-transform: scale(1.05);
-        }  
-
-.card__img--cafe-del-dia {
-max-width: 30%;
-padding-bottom: 1em;
-        }
-
-.card-origen-titulo {
-    font-size: 1.4em;
+.imagen-destacada-contenedor {
+    display: flex;
+    justify-content: center;
+    height: 400px;
 }
-
-
-.card-origen p {
-font-size: 0.8em;
-padding-top: 1em;
-}
-
-.slider-padre-home {
-    background-image: url("../images/slider.jpg");
-    }
 
  /* Media Queries */
 
 
- @media screen and (max-width: 992px) {
-    .origen-padre  {
-    grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-
-@media screen and (max-width: 767px) {
-    .origen-padre {
-    @include flex-column-centrado
-    }
-
-    
-
-
-    .card__img--origen {
-        max-width: 40%;
-             }
-
-    .card-origen p {
-    padding-left: 5em;
-    padding-right: 5em;
-            }
-
-
-}
-
-@media screen and (max-width: 767px) {
-    .cafe-del-dia-padre {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    text-align: center;
-    }
-
-    .card__img--cafe-del-dia {
-        max-width: 60%;
-        padding-bottom: 1em;
-                }
-}
-
-
-@media screen and (max-width: $pantalla-mediana) {
-    .header-padre {
-       flex-direction: column;
-
-    }
- }
-
- @media screen and (max-width: 399px) {
-    .cuatro-columnas {
+@media screen and (max-width: 768px) {
+    .origen {
+        display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
-    .card-4col {
-        margin-bottom: 2em;
+    .cafe-card {
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        text-align: center;
     }
+    .boton-card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .origen-contenedor{
+    row-gap: 40px;
+    }
+
+    .iconos-contenedor-chico {
+        row-gap: 20px;
+        max-width: 500px;
+     }
  }
+
+ @media screen and (max-width: 480px) {
+
+    .news-form {
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .news-input {
+        border-radius: 10px;
+        padding: 15px;
+        height: 54px;
+        margin: 0px;
+    }
+
+    .news-boton {
+        margin-top: 0px;
+    }
+
+ }
+
+
+
