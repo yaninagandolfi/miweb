@@ -1,46 +1,4 @@
-/* Header */
-
-
-
-.navbar-logo {
-    display: flex;
-    justify-content:center;
-
-    img{
-        width: 145px;
-    }
-     }
-
-
-.topnav {
-    background-color: $color-primario;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 35px;
-
-    p {
-        color: #ffffff;
-        font-size: 12px;
-        margin-bottom: 0px;
-    }
-}
-
-.topnav-cian {
-    background-color: $color-secundario;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 35px;
-
-    p {
-        color: $color-primario;
-        font-size: 12px;
-        text-transform: uppercase;
-        margin-bottom: 0px;
-    }
-}
+/*Navbar*/
 
 .navbar-contenedor {
     display: flex; 
@@ -63,8 +21,48 @@
     text-align: center;
      }
 
-/*Nueva navbar*/
 
+.navbar-logo {
+    display: flex;
+    justify-content:center;
+
+    img{
+        width: 145px;
+    }
+    }
+
+/*Topbar*/
+
+.topnav-contenedor {
+    display: flex; 
+    flex-direction: column;
+}
+
+
+.topnav {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    min-height:25px; 
+    text-align: center; 
+    color:white; 
+    font-size: 13px;
+    text-transform:uppercase; 
+}
+
+
+.azul {
+    background-color: $color-primario;
+}
+
+.cian {
+    background-color: $color-secundario; 
+    color: $color-primario;
+}
+
+
+
+/*Nav*/
 
 .nav-padre {
     display:flex; 
