@@ -296,54 +296,24 @@ input, textarea {
     text-align: center;
   }
 }
-/*Nav*/
-.or-padre {
+/* Origen */
+.origenes-padre {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
   padding: 30px;
 }
 
-.or-chica {
-  display: flex;
-  flex-direction: row;
-  width: 1000px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Origen */
-.origen-contenedor-padre {
-  margin-top: 20px;
+.origenes-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-
-.origen-contenedor {
-  padding: 20px;
-  display: flex;
-  max-width: 1400px;
-}
-
-.origen-columna {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-}
-
-.origen-card {
+  padding: 30px;
   border-radius: 15px;
   padding: 20px;
   box-shadow: 2px 2px 13px 1px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
   background-color: white;
-}
-
-.origen-img {
-  margin-bottom: 20px;
+  text-align: center;
 }
 
 /*  Cafe */
