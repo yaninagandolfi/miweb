@@ -34,48 +34,9 @@
 }
 
 
-/* Cafe 
 
 
-.cafe-contenedor {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-
-
-    h3 {
-        color: #4426ee;
-        font-weight: 800;
-    }
-
- }
-
- .cafe-card {
-    max-width: 1200px;
-    background-color: #d1f7f6;
-    border-radius: 30px;
-    padding: 50px;
-    display: flex; 
-    flex-direction: row; 
-    align-items: center; 
-    justify-content: center; 
-    gap: 20px;
-}
-
-.cafe-card-desc {
-    max-width: 504px;
-}
-
-.cafe-img {
-    margin-bottom:20px;
-    max-width: 300px;
-}
-
-*/
-
-/* NUEVO Cafe */
+/*  Cafe */
 
 
 .cafe-contenedor-grande {
@@ -129,7 +90,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 40px;
  }
 
  .iconos-contenedor-chico {
@@ -138,7 +98,7 @@
     padding-right: 40px;
     display: flex;
     row-gap: 30px;
- }
+    }
 
  .iconos {
     color: $color-primario;
@@ -146,8 +106,6 @@
     padding: 30px;
 
 }
-
-
 
 /*Newsletter*/
 
