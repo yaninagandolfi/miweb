@@ -296,6 +296,22 @@ input, textarea {
     text-align: center;
   }
 }
+/*Nav*/
+.or-padre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px;
+}
+
+.or-chica {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* Origen */
 .origen-contenedor-padre {
   margin-top: 20px;
