@@ -380,8 +380,6 @@ input, textarea {
 
 .iconos-contenedor-chico {
   max-width: 1400px;
-  padding-left: 40px;
-  padding-right: 40px;
   display: flex;
   row-gap: 30px;
 }
